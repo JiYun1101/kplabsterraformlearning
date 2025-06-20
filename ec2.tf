@@ -1,8 +1,4 @@
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-00c39f71452c08778"
   instance_type = "t3.micro"
-
-  tags = {
-    Name = "HelloWorld"
-  }
 }
